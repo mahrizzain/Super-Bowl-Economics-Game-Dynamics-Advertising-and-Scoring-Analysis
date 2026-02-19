@@ -23,11 +23,11 @@ All team members can refer to this document throughout the semester.
 
 -   What are your team goals for this project?
 
-Discuss as a team and add your response here.
+Our teams goals are to (1) complete the project accurately, (2) work within deadlines, and (3) be communicative and collaborative.
 
 -   What do you want to accomplish? What skills do you want to develop or refine?
 
-Discuss as a team and add your response here.
+Our team hopes to arrive at a satisfactory conclusion based on our work. We hope all members contribute equally and develop quality problem solving, collaboration, and data analysis skills.
 
 # Expectations
 
@@ -35,21 +35,21 @@ Discuss as a team and add your response here.
 
 -   Meeting times: Identify a 1 - 2 hour weekly block outside of lab where the team can meet to work on assignments. All team members should block off this time on their calendar in case the team needs to meet to work on the project. Note: If you are unable to find a weekly time when the team can meet, briefly outline a plan to work on assignments outside of lab.
 
-Discuss as a team and add your response here.
+Sunday evening around 7:00pm to 8:00pm.
 
 -   Meeting location: Identify how or where the team will meet to work together (e.g. in-person, Zoom, Facetime, Google Hangouts). Be sure every member is able to access the in-person and/or virtual meeting space.
 
-Discuss as a team and add your response here.
+We plan to utilize Zoom to meet.
 
 ## Communication
 
 -   Method of communication: Identify the team's primary method of communication outside of meetings (e.g. GroupMe, Slack, text messages, etc.). Be sure all members are able to access the team's chosen communication platform.
 
-Discuss as a team and add your response here.
+Our team has already created a groupchat with all members.
 
 -   Notifying team members: How should someone notify the other members if they are unable to attend lab or a scheduled team meeting?
 
-Discuss as a team and add your response here.
+All communication should be sent in the groupchat.
 
 ## Workflow
 
@@ -57,38 +57,42 @@ While it's not productive to divvy up the entire project work at the beginning a
 
 -   By when should everyone have their portion of the work completed? *Keep in mind your team will want to have time to review each portion before turning it in to make sure all pieces make sense together and any writing is cohesive.*
 
-Discuss as a team and add your response here.
+Team members should complete their part at least two days before the set deadline, unless otherwise agreed upon by group members.
 
 -   How should team members communicate if they're struggling with the portion of the work assigned to them?
 
-Discuss as a team and add your response here.
+Either reach out to a specific group member for support or send a message in the groupchat.
 
 # Policies & procedures
 
 What rules can you agree on to help you meet your goals and expectations?
 
-Discuss as a team and add your response here.
+Holding yourself accountable, staying organized, keeping deadlines in calendar and responding to groupchat messages.
 
 # Consequences
 
 How will you address non-performance in regard to these goals, expectations, policies and procedures?
 
-Discuss as a team and add your response here.
+Respectfully re communicate expectations and ask if they require help completing their tasks. 
 
 # Additional items
 
 Use the remaining space for any other items the team would like to discuss or plan out.
 
-Discuss as a team and add your response here.
+Be awesome and do your work!
 
 --------------------------------------------------------------------------------
 
 We share these goals and expectations, and agree to these policies, procedures, and consequences.
 
-Team member name:
+Team member name: Benjamin Palmer
 
-Team member name:
+Team member name: Mahriz Zain
 
-Team member name:
+Team member name: Diya Patel
+
+Team member name: Priyanka Gupta
+
+Team member name: Julia Libhaber
 
 ...
