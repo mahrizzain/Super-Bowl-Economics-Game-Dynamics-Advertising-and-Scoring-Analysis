@@ -3,7 +3,9 @@ title: Meet the team
 author: ""
 ---
 
-This project was developed by **Group A** For [STA 199: Introduction to Data Science](https://sta199-s26.github.io/) at Duke University.
+<<<<<<< HEAD
+This project was developed by **\[Awesomeness\]** For [STA 199: Introduction to Data Science](https://sta199-s26.github.io/) at Duke University.
+
 The team is comprised of the following team members.
 
 -   Team member 1: One sentence description of Team member 1 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
