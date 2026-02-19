@@ -1,5 +1,5 @@
 ---
-title: Add project title here
+title: Team Awesome Proposal
 subtitle: Proposal
 ---
 
@@ -11,7 +11,7 @@ library(tidyverse)
 
 # Data 1
 
-## Introduction and data
+## Introduction and data 
 
 -   Identify the source of the data.
 
@@ -34,7 +34,10 @@ library(tidyverse)
 ```{r}
 #| label: load-data-1
 
-# add code here
+super_bowl_data_1 <- read.csv("super-bowl-dataset-1.csv")
+glimpse(super_bowl_data_1)
+
+# mostly will use this dataset because it is more comprehensive / more data
 ```
 
 # Data 2
@@ -62,5 +65,7 @@ library(tidyverse)
 ```{r}
 #| label: load-data-2
 
-# add code here
+super_bowl_data_2 <- read.csv("super-bowl-dataset-2.csv")
+glimpse(super_bowl_data_2)
+
 ```
