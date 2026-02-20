@@ -23,17 +23,15 @@ library(tidyverse)
 
 ## Research question - Benjamin Palmer
 
--   **Research Question:** How has the cost of a 30-second Super Bowl advertisement changed over time, and how is it related to television viewership? 
+-   **Research Question:** How has the cost of a 30-second Super Bowl advertisement changed based on U.S viewership across the various television network broadcasters?
 
--   **Description & Hypothesis:** The Super Bowl is one of the most-watched sporting events in the United States and a major advertising platform for companies, organizations, and causes during commercial breaks. Over time, advertising costs have increased dramatically, and our research seeks to explore the relationship between viewership and the cost of advertisements.
-    + **H₀ (Null):** There is no relationship between year and cost of a 30-second ad.
-    + **H₁ (Alternative):** The cost of a 30-second ad increases over time.
-
-Our team hypothesizes that there will be a **strong and positive** relationship between year and the cost of a 30-second advertisement.
+-   **Description & Hypothesis:** The Super Bowl is one of the most-watched televised events in the United States and also a major advertising opportunity for companies. Over the years, the cost of a 30-second Super Bowl advertisement has increased substantially, and because companies are willing to pay more to reach the increasing audience we expect advertisement costs to rise as viewership increases. Additionally, different television networks may show variation in advertisement pricing. Understanding how advertisement costs have changed over time and how they relate to viewership and broadcasting networks is important to learn how how demand for advertising is influenced by audience size and network distribution.
+    + H₀: There is no relationship between year and the cost of a 30-second Super Bowl advertisement.
+    + H₁: The cost of a 30-second Super Bowl advertisement increases over time.
 
 -   **Variables**
-    +   **Categorical:** Game, Winning Team, Winning Team Conference, Losing Team, Losing Team Conference, Venue, City, Network, and Notes
-    +   **Numerical:** Index, Winning Team Points, Losing Team Points, Attendance, Average U.S. Viewers, Rating, Share, Cost Per 30s Ad
+    +   **Categorical:** Network
+    +   **Numerical:** Year (will be derived from date), Average U.S. Viewers, Cost Per 30s Ad
 
 ## Glimpse of data
 
