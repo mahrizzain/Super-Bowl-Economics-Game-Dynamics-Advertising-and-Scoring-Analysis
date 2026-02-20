@@ -3,13 +3,16 @@ title: Meet the team
 author: ""
 ---
 
-<<<<<<< HEAD
-This project was developed by **\[Awesomeness\]** For [STA 199: Introduction to Data Science](https://sta199-s26.github.io/) at Duke University.
+This project was developed by team **group_by-awesomeness** for [STA 199: Introduction to Data Science](https://sta199-s26.github.io/) at Duke University.
 
-The team is comprised of the following team members.
+The team is comprised of the following team members:
 
--   Benjamin Palmer: One sentence description of Team member 1 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
--   Diya Patel: One sentence description of Team member 2 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
--   Team member 3: One sentence description of Team member 3 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
--   Team member 4: One sentence description of Team member 4 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
--   ...
+-   **Benjamin Palmer:** A first-year from Connecticut planning to major in Public Policy. Learn more from his [LinkedIn](https://www.linkedin.com/in/benjamin-palmer-337578123/)!
+
+-   **Diya Patel:** One sentence description of Team member 2 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
+
+-   **Team member 3:** One sentence description of Team member 3 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
+
+-   **Team member 4:** One sentence description of Team member 4 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
+
+-   **Team member 5:** One sentence description of Team member 5 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
