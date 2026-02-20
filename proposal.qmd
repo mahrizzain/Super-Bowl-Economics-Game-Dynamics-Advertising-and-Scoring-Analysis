@@ -1,5 +1,5 @@
 ---
-title: Team Awesome Proposal  
+title: group_by-awesomeness's Proposal  
 subtitle: Proposal
 ---
 
@@ -11,7 +11,7 @@ library(tidyverse)
 
 # Data 1
 
-## Introduction and data 
+## Introduction and data
 
 -   Identify the source of the data.
 
@@ -19,15 +19,22 @@ library(tidyverse)
 
 -   Write a brief description of the observations.
 
--   Address ethical concerns about the data. If none are identified, state that explicitly.
+-   Address ethical concerns about the data.
+    If none are identified, state that explicitly.
 
 ## Research question - Benjamin Palmer
 
--   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+-   **Research Question:** How has the cost of a 30-second Super Bowl advertisement changed over time, and how is it related to television viewership? 
 
--   A description of the research topic along with a concise statement of your hypotheses on this topic.
+-   **Description & Hypothesis:** The Super Bowl is one of the most-watched sporting events in the United States and a major advertising platform for companies, organizations, and causes during commercial breaks. Over time, advertising costs have increased dramatically, and our research seeks to explore the relationship between viewership and the cost of advertisements.
+    + **H₀ (Null):** There is no relationship between year and cost of a 30-second ad.
+    + **H₁ (Alternative):** The cost of a 30-second ad increases over time.
 
--   Identify the types of variables in your research question. Categorical? Numerical?
+Our team hypothesizes that there will be a **strong and positive** relationship between year and the cost of a 30-second advertisement.
+
+-   **Variables**
+    +   **Categorical:** Game, Winning Team, Winning Team Conference, Losing Team, Losing Team Conference, Venue, City, Network, and Notes
+    +   **Numerical:** Index, Winning Team Points, Losing Team Points, Attendance, Average U.S. Viewers, Rating, Share, Cost Per 30s Ad
 
 ## Glimpse of data
 
@@ -50,15 +57,19 @@ glimpse(super_bowl_data_1)
 
 -   Write a brief description of the observations.
 
--   Address ethical concerns about the data. If none are identified, state that explicitly.
+-   Address ethical concerns about the data.
+    If none are identified, state that explicitly.
 
 ## Research question
 
--   A well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+-   A well formulated research question.
+    (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
 
 -   A description of the research topic along with a concise statement of your hypotheses on this topic.
 
--   Identify the types of variables in your research question. Categorical? Numerical?
+-   Identify the types of variables in your research question.
+    Categorical?
+    Numerical?
 
 ## Glimpse of data
 
