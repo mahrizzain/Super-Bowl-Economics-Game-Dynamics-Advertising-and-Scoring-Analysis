@@ -1,6 +1,6 @@
 ---
-title: group_by-awesomeness's Proposal  
-subtitle: Proposal
+title: "group_by-awesomeness's Proposal"
+subtitle: "Proposal"
 ---
 
 ```{r}
@@ -11,15 +11,15 @@ library(tidyverse)
 
 # Data 1
 
-## Introduction and data - Julia Libhaber
+## Introduction and data
 
--  The data set is derived from publicly available National Football League (NFL) Super Bowl records, making it a secondary compiled data set. The source of the data is the NFL, and Kaggle Datasets, a large open-source repository, is the distributor.
+-   Identify the source of the data.
 
--   The data was collected after each Super Bowl, starting in 1967 to 2025. The NFL staff collects the official game records after each game, stores them in record systems, and posts them to the public. Kaggle users compiled the data afterward.
+-   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
 
--   Each of the 58 rows of the data set is a different Super Bowl game, from 1967 to 2025. There are 16 variables in the data set: SB number, date, attendance, winner, QB winner, Coach Winner, Winner Pts, Loser, QB Loser, Coach Loser, Losing Points, MVP, Stadium, City, State, and Point Difference. There are 928 observations.
+-   Write a brief description of the observations.
 
--   This data set only contains public sports information. However, the NFL owns the original game data, and compiled data sets on Kaggle may have usage or redistribution terms. Aside from data ownership considerations, there are no major ethical issues.
+-   Address ethical concerns about the data. If none are identified, state that explicitly.
 
 ## Research question - Benjamin Palmer
 
@@ -48,13 +48,13 @@ glimpse(super_bowl_data_1)
 
 ## Introduction and data
 
--   Identify the source of the data.
+-  The data set is derived from publicly available National Football League (NFL) Super Bowl records, making it a secondary compiled data set. The source of the data is the NFL, and Kaggle Datasets, a large open-source repository, is the distributor.
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+-   The data was collected after each Super Bowl, starting in 1967 to 2020. The NFL staff collects the official game records after each game, stores them in record systems, and posts them to the public. Kaggle users compiled the data afterward.
 
--   Write a brief description of the observations.
+-   Each of the 54 rows of the data set is a different Super Bowl game, from 1967 to 2020. There are 10 variables in the data set: date, SB, winner, Winner Pts, Loser, Losing Points, MVP, Stadium, City, and State. There are 540 observations.
 
--   Address ethical concerns about the data. If none are identified, state that explicitly.
+-   This data set only contains public sports information. However, the NFL owns the original game data, and compiled data sets on Kaggle may have usage or redistribution terms. Aside from data ownership considerations, there are no major ethical issues.
 
 ## Research question
 
