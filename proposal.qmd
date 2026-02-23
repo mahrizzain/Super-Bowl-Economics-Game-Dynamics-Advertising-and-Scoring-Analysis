@@ -58,12 +58,15 @@ glimpse(super_bowl_data_1)
 
 ## Research question
 
--   A well formulated research question.
-    (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+-   **Research Question:** Does the margin of victory affect the total number of points scored in a Super Bowl game?
 
--   A description of the research topic along with a concise statement of your hypotheses on this topic.
+-   **Description & Hypothesis:** This research topic investigates whether there is a relationship between the competitiveness of a game and its offensive output throughout Super Bowl history. A small margin of victory suggests a close, competitive game, and a large margin of victory suggests a one-sided game. So we will examine whether more competitive games (small margin of victory) tend to be higher scoring than less competitive games (large margin of victory). Understanding this relationship is important because it contributes to sports analytics research on competitiveness and scoring patterns and helps explain game dynamics in championship settings.
+    + H₀: There is no relationship between margin of victory and total points scored.
+    + H₁: There is a significant relationship between margin of victory and total points scored.
 
--   Identify the types of variables in your research question. Categorical? Numerical?
+-   **Variables**
+    +   **Categorical:** Super Bowl (Year)
+    +   **Numerical:** Margin of Victory = Winner Points − Loser Points, Total Points = Winner Points + Loser Points
 
 ## Glimpse of data
 
