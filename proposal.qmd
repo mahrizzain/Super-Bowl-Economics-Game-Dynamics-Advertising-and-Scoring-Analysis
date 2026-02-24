@@ -13,13 +13,13 @@ library(tidyverse)
 
 ## Introduction and data
 
--   Identify the source of the data.
+-   The data comes from the “Super Bowl Game Results” dataset on Kaggle, an open-source repo, which was compiled using publicly available Nation Football League statistics. 
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+-  The original data were collected annually after each Super Bowl, beginning with Super Bowl I (1967) and spanning until Super Bowl LII (2018). Game details were recorded from official records of the National Football League, while television viewership, ratings, and network information were measured by broadcast networks and media rating organizations, and advertising costs were tracked by the advertising industry. These statistics were collected annually as part of routine sports and media reporting and later aggregated by the dataset curator.
 
--   Write a brief description of the observations.
+-   The dataset contains 52 rows, each representing a different Super Bowl game from 1967 to 2018. There are 19 variables: Index, Game, Date, Winning Team, Winning Team Points, Winning Team Conference, Score, Losing Team, Losing Team Points, Losing Team Conference, Venue, City, Attendance, Network, Average U.S. Viewers, Rating, Share, Cost Per 30s Ad, and Notes.
 
--   Address ethical concerns about the data. If none are identified, state that explicitly.
+-   There are no identified ethical concerns, as all data come from publicly reported statistics.
 
 ## Research question - Benjamin Palmer
 
