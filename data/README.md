@@ -6,24 +6,25 @@ Add data dictionary to this file.
 
 ## Dataset 1: `super-bowl-dataset-1.csv`
 
-- `Game`: The number assigned to each Super Bowl game. (Numeric)
-- `Date`: The date on which the Super Bowl game took place. (Date)
-- `Winning.team`: The name of the team that emerged victorious in each game. (Text)
-- `Winning.Team.Points`: The total number of points scored by the winning team. (Numeric)
-- `Winning.Team.Conference`: The conference to which the winning team belongs (e.g., AFC or NFC). (Text)
-- `Score`: The final score of the Super Bowl game, indicating the points scored by both the winning and losing teams. (Text) 
-- `Losing.team`: The name of the team that lost each game. (Text)
-- `Losing.Team.Points`: The total number of points scored by the losing team. (Numeric)
-- `Losing.Team.Conference`: The conference to which the losing team belongs (e.g., AFC or NFC). (Text)
-- `Venue`: The location where the Super Bowl game was held. (Text)
-- `City`: The city where the Super Bowl game was held. (Text)
-- `Attendance`: The number of people who attended the Super Bowl game. (Numeric)
-- `Network`: The television network that broadcasted the Super Bowl game. (Text)
-- `Average.U.S..Viewers`: The average number of viewers who watched the Super Bowl game in the United States. (Numeric)
-- `Rating`: The television rating for the Super Bowl game, indicating the percentage of households with televisions that were tuned in to watch the game. (Numeric)
-- `Share`: The share of viewers that were tuned in to watch the Super Bowl game. (Numeric)
-- `Cost.Per.30s.Ad`: The cost of a 30-second advertisement during the Super Bowl game. (Numeric)
-- `Notes`: Additional details or interesting facts about specific Super Bowl games. (Text)
+- `Game`: Number assigned to each Super Bowl game.  
+- `Date`: Date on which the Super Bowl game took place.  
+- `Winning.team`: Name of the team that won the game.  
+- `Winning.Team.Points`: Points scored by the winning team.  
+- `Winning.Team.Conference`: Conference of the winning team.
+- `Score`: Final score showing points for both teams.  
+- `Losing.team`: Name of the team that lost the game.
+- `Losing.Team.Points`: Points scored by the losing team.
+- `Losing.Team.Conference`: Conference of the losing team. 
+- `Venue`: Location where the game was held.
+- `City`: City where the game was held.
+- `Attendance`: Number of people attending the game.
+- `Network`: Television network that broadcasted the game.
+- `Average.U.S..Viewers`: Average number of viewers in the U.S. who watched the game.
+- `Rating`: TV rating showing percentage of households with TVs tuned in.
+- `Share`: Share of viewers tuned in among households watching TV.
+- `Cost.Per.30s.Ad`: Cost of a 30-second advertisement during the game.
+- `Notes`: Additional details or interesting facts about the game.
+
 ...
 
 ## Dataset 2: `name_of_data_file`
