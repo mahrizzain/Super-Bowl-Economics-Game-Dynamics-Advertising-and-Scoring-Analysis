@@ -21,7 +21,7 @@ library(tidyverse)
 
 -   There are no identified ethical concerns, as all data come from publicly reported statistics.
 
-## Research question - Benjamin Palmer
+## Research question
 
 -   **Research Question:** How has the cost of a 30-second Super Bowl advertisement changed based on U.S viewership across the various television network broadcasters?
 
