@@ -38,7 +38,7 @@ library(tidyverse)
 ```{r}
 #| label: load-data-1
 
-super_bowl_data_1 <- read.csv("super-bowl-dataset-1.csv")
+super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv")
 glimpse(super_bowl_data_1)
 
 # mostly will use this dataset because it is more comprehensive / more data
@@ -73,7 +73,7 @@ glimpse(super_bowl_data_1)
 ```{r}
 #| label: load-data-2
 
-super_bowl_data_2 <- read.csv("super-bowl-dataset-2.csv")
+super_bowl_data_2 <- read.csv("data/super-bowl-dataset-2.csv")
 glimpse(super_bowl_data_2)
 
 ```
