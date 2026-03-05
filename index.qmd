@@ -12,9 +12,20 @@ Add 1-3 sentence project abstract here.
 Add introduction section here.
 
 ## Data
+<!--
+```{r}
+#| label: tidying-dataset-1
 
-Add data section here.
 
+library(tidyverse)
+super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv")
+
+super_bowl_data_1 |>
+  mutate(date = mdy(date)) |> 
+  select(-index, -winning_team_conference, -losing_team_conference, -venue, -city, -notes)
+
+```
+--->
 ## Analysis
 
 Add analysis section here.

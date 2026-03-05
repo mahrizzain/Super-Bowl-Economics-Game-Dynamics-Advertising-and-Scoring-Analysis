@@ -41,12 +41,8 @@ library(tidyverse)
 super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv")
 glimpse(super_bowl_data_1)
 
-# mostly will use this dataset because it is more comprehensive / more data
 ```
-<!--
-This text will not appear in the rendered document.
-You can write multiple paragraphs here.
--->
+
 <!--
 
 
