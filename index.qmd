@@ -41,12 +41,15 @@ super_bowl_data_1 <- super_bowl_data_1 |>
 ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
   geom_point() +
   geom_line() +
+  scale_x_date(date_breaks = "5 year", date_labels = "%Y") +
+  scale_y_continuous(labels = scales::label_number(scale = 1e-06, suffix = " mil")) +
   labs(
     title = "Average U.S Television Viewers over Time",
     caption = "",
     x = "Date of Super Bowl",
     y = "Average U.S Television Viewers"
-  )
+  ) +
+  theme_minimal()
 ```
 
 ```{r}
@@ -54,27 +57,32 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
 
 ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
   geom_point() +
-  geom_line() +
+  geom_line() + 
+  scale_x_date(date_breaks = "5 year", date_labels = "%Y") +
+  scale_y_continuous(labels = scales::label_number(scale = 1e-06, suffix = " mil")) +
   labs(
-    title = "",
+    title = "Cost per 30 second Commercial Advertisement over Time",
     caption = "",
     x = "Date of Super Bowl",
-    y = "Average U.S Television Viewers"
-  )
+    y = "Cost per 30 second Advertisement"
+  ) +
+  theme_minimal()
 
 ```
 
 ```{r}
 #| label: plot-3
 
-ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y = rating)) +
+ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y = rating, color = network)) +
   geom_point() +
   labs(
-    title = "",
+    title = "Network Rating of Super Bowl Games by Point Differential",
     caption = "",
     x = "Point Differential",
-    y = "Rating"
-  )
+    y = "Rating",
+    color = "Network"
+  ) +
+  theme_minimal()
 
 ```
 
