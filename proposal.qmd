@@ -20,7 +20,7 @@ library(tidyverse)
 -   The dataset contains 52 rows, each representing a different Super Bowl game from 1967 to 2018. There are 19 variables: Index, Game, Date, Winning Team, Winning Team Points, Winning Team Conference, Score, Losing Team, Losing Team Points, Losing Team Conference, Venue, City, Attendance, Network, Average U.S. Viewers, Rating, Share, Cost Per 30s Ad, and Notes.
 
 -   There are no identified ethical concerns, as all data come from publicly reported statistics.
-
+<!--
 ## Research question
 
 -   **Research Question:** How has the cost of a 30-second Super Bowl advertisement changed based on U.S viewership across the various television network broadcasters?
@@ -28,10 +28,29 @@ library(tidyverse)
 -   **Description & Hypothesis:** The Super Bowl is one of the most-watched televised events in the United States and also a major advertising opportunity for companies. Over the years, the cost of a 30-second Super Bowl advertisement has increased substantially, and because companies are willing to pay more to reach the increasing audience we expect advertisement costs to rise as viewership increases. Additionally, different television networks may show variation in advertisement pricing. Understanding how advertisement costs have changed over time and how they relate to viewership and broadcasting networks is important to learn how how demand for advertising is influenced by audience size and network distribution.
     + H₀: There is no relationship between year and the cost of a 30-second Super Bowl advertisement.
     + H₁: The cost of a 30-second Super Bowl advertisement increases over time.
+    
 
 -   **Variables**
     +   **Categorical:** Network
     +   **Numerical:** Year (will be derived from date), Average U.S. Viewers, Cost Per 30s Ad
+    
+    old version (left it here just to see)
+-->
+
+## Research question
+
+-   **Research Question:** How do game competitiveness (margin of victory) and broadcast factors (TV network and U.S. viewership) relate to Super Bowl relate to Super Bowl scoring outcomes and advertising costs over time?
+
+-   **Description & Hypothesis:** The Super Bowl is one of the most-watched televised events in the United States and also a major advertising opportunity for companies. Over the years, the cost of a 30-second Super Bowl advertisement has increased substantially, and because companies are willing to pay more to reach the increasing audience we expect advertisement costs to rise as viewership increases. Additionally, different television networks may show variation in advertisement pricing. Understanding how advertisement costs have changed over time and how they relate to viewership and broadcasting networks is important to learn how how demand for advertising is influenced by audience size and network distribution. Also, this research topic investigates whether there is a relationship between the competitiveness of a game and its offensive output throughout Super Bowl history. A small margin of victory suggests a close, competitive game, and a large margin of victory suggests a one-sided game. So we will examine whether more competitive games (small margin of victory) tend to be higher scoring than less competitive games (large margin of victory). Understanding this relationship is important because it contributes to sports analytics research on competitiveness and scoring patterns and helps explain game dynamics in championship settings.
+
+    + H₀: There is no relationship between year and the cost of a 30-second Super Bowl advertisement.
+    + H₁: The cost of a 30-second Super Bowl advertisement increases over time.
+    + H₀₂: There is no relationship between margin of victory and total points scored.
+    + H₁₂: There is a significant relationship between margin of victory and total points scored.
+
+-   **Variables**
+    +   **Categorical:** Network (television broadcaster)
+    +   **Numerical:** Average U.S. Viewers, Cost Per 30s Ad, Year (derived from date), Margin of Victory = Winner Points − Loser Points, Total Points = Winner Points + Loser Points
 
 ## Glimpse of data
 
