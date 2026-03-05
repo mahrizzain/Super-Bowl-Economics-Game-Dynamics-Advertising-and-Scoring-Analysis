@@ -1,5 +1,5 @@
 ---
-title: Superbowl Statistics
+title: Add project title here
 subtitle: Report
 execute:
   echo: true
@@ -13,7 +13,16 @@ Add introduction section here.
 
 ## Data
 
-Add data section here.
+```{r}
+#| label: tidying-dataset-1
+
+library(tidyverse)
+
+super_bowl_data_1 |>
+  mutate(date = mdy(date)) |> 
+  select(-index, -winning_team_conference, -losing_team_conference, -venue, -city, -notes)
+
+```
 
 ## Analysis
 

@@ -7,7 +7,6 @@ subtitle: "Proposal"
 #| label: load-pkgs
 #| message: false
 library(tidyverse)
-library(janitor)
 ```
 
 # Data 1
@@ -43,6 +42,13 @@ super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv", col.names = c( "i
 glimpse(super_bowl_data_1)
 
 # mostly will use this dataset because it is more comprehensive / more data
+```
+```{r}
+#| label: tidying-dataset-1
+
+super_bowl_data_1 <- super_bowl_data_1 |>
+  mutate(date = mdy(date)) |> 
+  select(-index, -winning_team_conference, -losing_team_conference, -venue, -city, -notes)
 ```
 
 # Data 2
