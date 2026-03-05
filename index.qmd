@@ -34,8 +34,6 @@ super_bowl_data_1 <- super_bowl_data_1 |>
   mutate(avg_us_viewers = as.numeric(avg_us_viewers))
 
 ```
-=======
-Add data section here.
 
 ```{r}
 #| label: plot-1
