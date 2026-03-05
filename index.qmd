@@ -1,5 +1,5 @@
 ---
-title: Add project title here
+title: Superbowl Statistics
 subtitle: Report
 execute:
   echo: true
