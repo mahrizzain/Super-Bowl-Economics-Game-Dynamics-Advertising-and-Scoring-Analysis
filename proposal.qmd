@@ -7,21 +7,22 @@ subtitle: "Proposal"
 #| label: load-pkgs
 #| message: false
 library(tidyverse)
+library(janitor)
 ```
 
 # Data 1
 
 ## Introduction and data
 
--   Identify the source of the data.
+-   The data comes from the “Super Bowl Game Results” dataset on Kaggle, an open-source repo, which was compiled using publicly available Nation Football League statistics. 
 
--   State when and how it was originally collected (by the original data curator, not necessarily how you found the data).
+-  The original data were collected annually after each Super Bowl, beginning with Super Bowl I (1967) and spanning until Super Bowl LII (2018). Game details were recorded from official records of the National Football League, while television viewership, ratings, and network information were measured by broadcast networks and media rating organizations, and advertising costs were tracked by the advertising industry. These statistics were collected annually as part of routine sports and media reporting and later aggregated by the dataset curator.
 
--   Write a brief description of the observations.
+-   The dataset contains 52 rows, each representing a different Super Bowl game from 1967 to 2018. There are 19 variables: Index, Game, Date, Winning Team, Winning Team Points, Winning Team Conference, Score, Losing Team, Losing Team Points, Losing Team Conference, Venue, City, Attendance, Network, Average U.S. Viewers, Rating, Share, Cost Per 30s Ad, and Notes.
 
--   Address ethical concerns about the data. If none are identified, state that explicitly.
+-   There are no identified ethical concerns, as all data come from publicly reported statistics.
 
-## Research question - Benjamin Palmer
+## Research question
 
 -   **Research Question:** How has the cost of a 30-second Super Bowl advertisement changed based on U.S viewership across the various television network broadcasters?
 
@@ -38,7 +39,7 @@ library(tidyverse)
 ```{r}
 #| label: load-data-1
 
-super_bowl_data_1 <- read.csv("super-bowl-dataset-1.csv")
+super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv", col.names = c( "index", "game", "date", "winning_team", "winning_team_points", "winning_team_conference", "score", "losing_team", "losing_team_points", "losing_team_conference", "venue", "city", "attendance", "network", "avg_us_viewers", "rating", "share", "cost_per_30_sec_ad", "notes"))
 glimpse(super_bowl_data_1)
 
 # mostly will use this dataset because it is more comprehensive / more data
@@ -58,19 +59,22 @@ glimpse(super_bowl_data_1)
 
 ## Research question
 
--   A well formulated research question.
-    (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)
+-   **Research Question:** Does the margin of victory affect the total number of points scored in a Super Bowl game?
 
--   A description of the research topic along with a concise statement of your hypotheses on this topic.
+-   **Description & Hypothesis:** This research topic investigates whether there is a relationship between the competitiveness of a game and its offensive output throughout Super Bowl history. A small margin of victory suggests a close, competitive game, and a large margin of victory suggests a one-sided game. So we will examine whether more competitive games (small margin of victory) tend to be higher scoring than less competitive games (large margin of victory). Understanding this relationship is important because it contributes to sports analytics research on competitiveness and scoring patterns and helps explain game dynamics in championship settings.
+    + H₀: There is no relationship between margin of victory and total points scored.
+    + H₁: There is a significant relationship between margin of victory and total points scored.
 
--   Identify the types of variables in your research question. Categorical? Numerical?
+-   **Variables**
+    +   **Categorical:** Super Bowl (Year)
+    +   **Numerical:** Margin of Victory = Winner Points − Loser Points, Total Points = Winner Points + Loser Points
 
 ## Glimpse of data
 
 ```{r}
 #| label: load-data-2
 
-super_bowl_data_2 <- read.csv("super-bowl-dataset-2.csv")
+super_bowl_data_2 <- read.csv("data/super-bowl-dataset-2.csv", col.names = c( "date", "game", "winning_team", "winning_team_points", "losing_team", "losing_team_points", "most_valuable_player", "stadium", "city", "state"))
 glimpse(super_bowl_data_2)
 
 ```
