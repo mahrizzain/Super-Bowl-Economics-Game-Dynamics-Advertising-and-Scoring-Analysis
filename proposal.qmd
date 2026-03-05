@@ -38,18 +38,17 @@ library(tidyverse)
 ```{r}
 #| label: load-data-1
 
-super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv", col.names = c( "index", "game", "date", "winning_team", "winning_team_points", "winning_team_conference", "score", "losing_team", "losing_team_points", "losing_team_conference", "venue", "city", "attendance", "network", "avg_us_viewers", "rating", "share", "cost_per_30_sec_ad", "notes"))
+super_bowl_data_1 <- read.csv("data/super-bowl-dataset-1.csv")
 glimpse(super_bowl_data_1)
 
 # mostly will use this dataset because it is more comprehensive / more data
 ```
-```{r}
-#| label: tidying-dataset-1
+<!--
+This text will not appear in the rendered document.
+You can write multiple paragraphs here.
+-->
+<!--
 
-super_bowl_data_1 <- super_bowl_data_1 |>
-  mutate(date = mdy(date)) |> 
-  select(-index, -winning_team_conference, -losing_team_conference, -venue, -city, -notes)
-```
 
 # Data 2
 
@@ -80,7 +79,9 @@ super_bowl_data_1 <- super_bowl_data_1 |>
 ```{r}
 #| label: load-data-2
 
-super_bowl_data_2 <- read.csv("data/super-bowl-dataset-2.csv", col.names = c( "date", "game", "winning_team", "winning_team_points", "losing_team", "losing_team_points", "most_valuable_player", "stadium", "city", "state"))
+super_bowl_data_2 <- read.csv("data/super-bowl-dataset-2.csv")
 glimpse(super_bowl_data_2)
 
 ```
+
+-->

@@ -34,6 +34,8 @@ super_bowl_data_1 <- super_bowl_data_1 |>
   mutate(avg_us_viewers = as.numeric(avg_us_viewers))
 
 ```
+=======
+Add data section here.
 
 ```{r}
 #| label: plot-1
@@ -48,6 +50,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
     y = "Average U.S Television Viewers"
   )
 ```
+
 ```{r}
 #| label: plot-2
 
@@ -62,6 +65,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
   )
 
 ```
+
 ```{r}
 #| label: plot-3
 
