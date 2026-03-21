@@ -17,6 +17,7 @@ Add introduction section here.
 #| label: load-pkgs
 #| message: false
 library(tidyverse)
+library(tidymodels)
 ```
 
 ```{r}
@@ -53,6 +54,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
   theme_minimal()
 ```
 
+
 ```{r}
 #| label: plot-2
 
@@ -88,9 +90,42 @@ ggplot(super_bowl_data_1, aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color 
 
 ```
 
-## Analysis
+```{r}
+#| label: plot-4
 
-Add analysis section here.
+ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y = (winning_team_points - losing_team_points))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(
+    title = "",
+    caption = "",
+    x = "Total Points",
+    y = "Point Difference"
+  ) +
+  theme_minimal()
+
+```
+
+```{r}
+#| label: calculating-correlation
+
+super_bowl_data_1 |> 
+  summarize(
+    r = cor((winning_team_points + losing_team_points), (winning_team_points - losing_team_points)),
+    r2 = r ^ 2,
+    sx = sd((winning_team_points + losing_team_points), na.rm = TRUE),
+    sy = sd((winning_team_points - losing_team_points), na.rm = TRUE),
+    b1 = r * sy / sx
+)
+
+```
+
+## Analysis
+**Hypothesis 1**
+
+
+**Hypothesis 2**
+The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the inverse, yielding a significant relationship. This analysis will use plot 4. Merely glancing at plot 4, there appears to be no relationship between the two variables. The scatterplot appears to be non-linear with a weak positive correlation. Our summary statistics table confirms this: our correlation coefficient (R value) is 0.280 which indicates a very low, positive relationship between the two variables.
 
 ## Discussion
 
