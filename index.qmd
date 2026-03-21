@@ -125,7 +125,8 @@ super_bowl_data_1 |>
 
 
 **Hypothesis 2**
-The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the inverse, yielding a significant relationship. This analysis will use plot 4. Merely glancing at plot 4, there appears to be no relationship between the two variables. The scatterplot appears to be non-linear with a weak positive correlation. Our summary statistics table confirms this: our correlation coefficient (R value) is 0.280 which indicates a very low, positive relationship between the two variables.
+The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the inverse, yielding a significant relationship. To investigate this, Plot 4 displays a scatterplot of total points scored on the x-axis and margin of victory (point differential) on the y-axis, with both a linear fit line overlaid for comparison. At first glance, Plot 4 reveals no clear or consistent pattern between the two variables. The points on the graph depart noticeably from the linear fit, suggesting that a straight-line model is not an appropriate characterization of the relationship, and that any association present is non-linear and inconsistent across the range of values.
+Our summary statistics support this visual interpretation. The correlation coefficient (R = 0.280) indicates a weak positive association between margin of victory and total points scored. Additionally, the coefficient of determination (R² = 0.078) reveals that margin of victory accounts for only approximately 8% of the variance in total points scored, meaning the vast majority of scoring variation is explained by other factors entirely.
 
 ## Discussion
 
