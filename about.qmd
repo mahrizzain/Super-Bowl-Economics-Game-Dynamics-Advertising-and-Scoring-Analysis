@@ -11,7 +11,7 @@ The team is comprised of the following team members:
 
 -   **Diya Patel:** One sentence description of Team member 2 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
 
--   **Team member 3:** One sentence description of Team member 3 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
+-   **Julia Libhaber:** One sentence description of Team member 3 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
 
 -   **Team member 4:** One sentence description of Team member 4 (e.g., year, major, etc.). Optionally,  hyperlink the team name to homepage or social profile (LinkedIn, etc.)  of team member.
 
