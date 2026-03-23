@@ -17,6 +17,7 @@ Add introduction section here.
 #| label: load-pkgs
 #| message: false
 library(tidyverse)
+library(tidymodels)
 ```
 
 ```{r}
@@ -53,20 +54,20 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
   theme_minimal()
 ```
 
+
 ```{r}
 #| label: plot-2
 
-ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
+ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
-  geom_line() + 
-  scale_x_date(date_breaks = "5 year", date_labels = "%Y") +
-  scale_y_continuous(labels = scales::label_number(scale = 1e-06, suffix = " mil")) +
   labs(
-    title = "Cost per 30 second Commercial Advertisement over Time",
+    title = "Cost of 30 second Advertisement by Point Differential across Networks",
     caption = "",
-    x = "Date of Super Bowl",
-    y = "Cost per 30 second Advertisement"
+    x = "Point Differential",
+    y = "Cost of 30 second Advertisement",
+    color = "Network"
   ) +
+  scale_y_continuous(labels = scales::label_dollar(scale = 1e-06, suffix = " mil")) +
   theme_minimal()
 
 ```
@@ -74,23 +75,58 @@ ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
 ```{r}
 #| label: plot-3
 
-ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y = rating, color = network)) +
+ggplot(super_bowl_data_1, aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
   labs(
-    title = "Network Rating of Super Bowl Games by Point Differential",
+    title = "Cost of a 30 second Ad based on Average U.S Viewers by Network",
     caption = "",
-    x = "Point Differential",
-    y = "Rating",
+    x = "Average U.S Viewers (in millions)",
+    y = "Cost of 30 second Advertisement (in millions of $)",
     color = "Network"
+  ) +
+  scale_x_continuous(labels = scales::label_number(scale = 1e-06)) +
+  scale_y_continuous(labels = scales::label_dollar(scale = 1e-06)) +
+  theme_minimal()
+
+```
+
+```{r}
+#| label: plot-4
+
+ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y = (winning_team_points - losing_team_points))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(
+    title = "",
+    caption = "",
+    x = "Total Points",
+    y = "Point Difference"
   ) +
   theme_minimal()
 
 ```
 
+```{r}
+#| label: calculating-correlation
+
+super_bowl_data_1 |> 
+  summarize(
+    r = cor((winning_team_points + losing_team_points), (winning_team_points - losing_team_points)),
+    r2 = r ^ 2,
+    sx = sd((winning_team_points + losing_team_points), na.rm = TRUE),
+    sy = sd((winning_team_points - losing_team_points), na.rm = TRUE),
+    b1 = r * sy / sx
+)
+
+```
 
 ## Analysis
+**Hypothesis 1**
 
-Add analysis section here.
+
+**Hypothesis 2**
+The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the inverse, yielding a significant relationship. To investigate this, Plot 4 displays a scatterplot of total points scored on the x-axis and margin of victory (point differential) on the y-axis, with both a linear fit line overlaid for comparison. At first glance, Plot 4 reveals no clear or consistent pattern between the two variables. The points on the graph depart noticeably from the linear fit, suggesting that a straight-line model is not an appropriate characterization of the relationship, and that any association present is non-linear and inconsistent across the range of values.
+Our summary statistics support this visual interpretation. The correlation coefficient (R = 0.280) indicates a weak positive association between margin of victory and total points scored. Additionally, the coefficient of determination (R² = 0.078) reveals that margin of victory accounts for only approximately 8% of the variance in total points scored, meaning the vast majority of scoring variation is explained by other factors entirely.
 
 ## Discussion
 
