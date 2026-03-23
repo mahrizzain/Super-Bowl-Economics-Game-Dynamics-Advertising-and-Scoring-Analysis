@@ -120,7 +120,22 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y 
 ```
 
 ```{r}
-#| label: calculating-correlation
+#| label: calculating-correlation-1
+
+super_bowl_data_1 |>
+  mutate(year = year((date))) |>
+  summarise(
+    r = cor(year, cost_per_30_sec_ad),
+    r2 = r^2,
+    sx = sd(year, na.rm = TRUE),
+    sy = sd(cost_per_30_sec_ad, na.rm = TRUE),
+    b1 = r * sy/ sx
+  )
+```
+
+
+```{r}
+#| label: calculating-correlation-2
 
 super_bowl_data_1 |> 
   summarize(
