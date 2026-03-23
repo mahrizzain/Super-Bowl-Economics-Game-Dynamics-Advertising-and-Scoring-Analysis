@@ -53,10 +53,23 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
   ) +
   theme_minimal()
 ```
+```{r}
+#| label: plot-2
+
+ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
+  geom_point() +
+  labs(
+    title = "Cost of 30 second Advertisement by Year",
+    caption = "",
+    x = "Super Bowl Year",
+    y = "Cost of 30 second Advertisement"
+  ) +
+  theme_minimal()
+```
 
 
 ```{r}
-#| label: plot-2
+#| label: plot-3
 
 ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
@@ -73,7 +86,7 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y 
 ```
 
 ```{r}
-#| label: plot-3
+#| label: plot-4
 
 ggplot(super_bowl_data_1, aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
@@ -91,7 +104,7 @@ ggplot(super_bowl_data_1, aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color 
 ```
 
 ```{r}
-#| label: plot-4
+#| label: plot-5
 
 ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y = (winning_team_points - losing_team_points))) +
   geom_point() +
