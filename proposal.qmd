@@ -39,9 +39,10 @@ library(tidyverse)
 
 ## Research question
 
--   **Research Question:** How do game competitiveness (margin of victory) and broadcast factors (TV network and U.S. viewership) relate to Super Bowl advertising costs over time?
+-   **Research Question:** How do game competitiveness (margin of victory) and broadcast factors (TV network and U.S. viewership) relate to Super Bowl relate to Super Bowl scoring outcomes and advertising costs over time?
 
 -   **Description & Hypothesis:** The Super Bowl is one of the most-watched televised events in the United States and also a major advertising opportunity for companies. Over the years, the cost of a 30-second Super Bowl advertisement has increased substantially, and because companies are willing to pay more to reach the increasing audience we expect advertisement costs to rise as viewership increases. Additionally, different television networks may show variation in advertisement pricing. Understanding how advertisement costs have changed over time and how they relate to viewership and broadcasting networks is important to learn how how demand for advertising is influenced by audience size and network distribution. Also, this research topic investigates whether there is a relationship between the competitiveness of a game and its offensive output throughout Super Bowl history. A small margin of victory suggests a close, competitive game, and a large margin of victory suggests a one-sided game. So we will examine whether more competitive games (small margin of victory) tend to be higher scoring than less competitive games (large margin of victory). Understanding this relationship is important because it contributes to sports analytics research on competitiveness and scoring patterns and helps explain game dynamics in championship settings.
+
     + H₀: There is no relationship between year and the cost of a 30-second Super Bowl advertisement.
     + H₁: The cost of a 30-second Super Bowl advertisement increases over time.
     + H₀₂: There is no relationship between margin of victory and total points scored.
