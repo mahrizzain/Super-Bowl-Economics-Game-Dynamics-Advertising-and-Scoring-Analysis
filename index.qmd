@@ -116,8 +116,8 @@ super_bowl_data_1 |>
 ggplot(aes(x = (winning_team_points - losing_team_points), y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
   labs(
-    title = "Cost of 30 second Advertisement by Point Differential across Networks",
-    x = "Point Differential",
+    title = "Cost of 30 second advertisement by \n Score Differential by Network",
+    x = "Point Difference",
     y = "Cost of 30 second Advertisement",
     color = "Network",
     caption = "Source: Super Bowl Dataset"
@@ -125,7 +125,7 @@ ggplot(aes(x = (winning_team_points - losing_team_points), y = cost_per_30_sec_a
   scale_y_continuous(labels = scales::label_dollar(scale = 1e-06, suffix = " mil")) +
   theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 18),
+    plot.title = element_text(face = "bold", size = 15),
     panel.grid.minor = element_blank(),
     panel.grid.major.x = element_blank()
   )
@@ -140,9 +140,9 @@ super_bowl_data_1 |>
   ggplot(aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
   labs(
-    title = "Cost of 30 second ad based on \n Avg. U.S Viewers by Network",
-    x = "Average U.S Viewers (in millions)",
-    y = "Cost of 30 second ad (in millions of $)",
+    title = "Cost of 30 second advertisement \n based on avg. U.S Viewers by Network",
+    x = "Average U.S Viewers (millions $)",
+    y = "Cost of 30 second ad (millions $)",
     color = "Network",
     caption = "Source: Super Bowl Dataset"
   ) +
@@ -150,7 +150,7 @@ super_bowl_data_1 |>
   scale_y_continuous(labels = scales::label_dollar(scale = 1e-06)) +
   theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 18),
+    plot.title = element_text(face = "bold", size = 14),
     panel.grid.minor = element_blank(),
     panel.grid.major.x = element_blank()
   ) +
@@ -171,13 +171,7 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y 
   ) +
   theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 18),
-    panel.grid.minor = element_blank(),
-    panel.grid.major.x = element_blank()
-  )  +
-  theme_minimal(base_size = 13) +
-  theme(
-    plot.title = element_text(face = "bold", size = 18),
+    plot.title = element_text(face = "bold", size = 15),
     panel.grid.minor = element_blank(),
     panel.grid.major.x = element_blank()
   )
