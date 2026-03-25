@@ -121,10 +121,13 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points - losing_team_points), y 
 ```{r}
 #| label: plot-4
 
-ggplot(super_bowl_data_1, aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color = network)) +
+super_bowl_data_1 |> 
+  filter(!game == "I") |> 
+  ggplot(aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
   labs(
-    title = "Cost of a 30 second Ad based on Average U.S Viewers by Network",
+    title = "Cost of a 30 second Ad based on Average U.S Viewers 
+    by Network",
     caption = "",
     x = "Average U.S Viewers (in millions)",
     y = "Cost of 30 second Advertisement (in millions of $)",
@@ -132,8 +135,13 @@ ggplot(super_bowl_data_1, aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color 
   ) +
   scale_x_continuous(labels = scales::label_number(scale = 1e-06)) +
   scale_y_continuous(labels = scales::label_dollar(scale = 1e-06)) +
-  theme_minimal()
-
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold", size = 18),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  ) +
+  facet_wrap(~network, ncol = 2)
 ```
 
 ```{r}
