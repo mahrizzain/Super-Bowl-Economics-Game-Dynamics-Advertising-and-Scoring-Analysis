@@ -1,15 +1,14 @@
 ---
-title: Add project title here
+title: "Super Bowl Economics and Game Dynamics: Trends in Advertising Costs and Scoring Patterns"
 subtitle: Report
-execute:
-  echo: true
+echo: true
 ---
 
 ## Introduction
 
 The Super Bowl is one of the most widely viewed sporting events in the US, making it one of the most valuable events for advertisers. Companies invest millions of dollars for just for seconds during the Super Bowl, and the costs have the ads have changed dramatically over time. In this project, we are trying to understand how advertising prices have evolved and what possible factors helped caused these changes.
 
-This project uses Kaggle's [“Super Bowl Game Results”] (https://www.kaggle.com/datasets/thedevastator/super-bowl-game-results/) dataset. The dataset includes information on date, location, scores, broadcast networks, and the cost of 30-second advertisements, and many other columns, which is more than enough for analyzing both economic and game-related factors.
+This project uses Kaggle's [“Super Bowl Game Results”](https://www.kaggle.com/datasets/thedevastator/super-bowl-game-results/) dataset. The dataset includes information on date, location, scores, broadcast networks, and the cost of 30-second advertisements, and many other columns, which is more than enough for analyzing both economic and game-related factors.
 
 The primary research question guiding this analysis is:
 
@@ -21,9 +20,7 @@ To address this question, two hypotheses are examined. First, we test whether th
 
 The data used in this project come from the “Super Bowl Game Results” dataset on Kaggle, which aggregates publicly available information from NFL records, broadcast networks, and media rating organizations. The dataset includes 52 observations, each representing a Super Bowl game from 1967 (Super Bowl I) through 2018 (Super Bowl LII), and contains 19 variables describing game outcomes, scoring, attendance, broadcast details, and advertising costs.
 
-Key Variables
-The variables most relevant to this analysis include:
-
+Key Variables:
 Date: The date on which each Super Bowl was played
 Winning Team Points / Losing Team Points: Points scored by each team
 Average U.S. Viewers: The average number of television viewers in the United States
@@ -35,9 +32,7 @@ Year: Extracted from the game date
 Margin of Victory: Difference between winning and losing team points
 Total Points: Sum of points scored by both teams
 
-Data Cleaning
-We also did basic preprocessing for our dataset:
-
+Data Cleaning:
 Converted the date variable into a standard date format
 Removed unnecessary variables, including index, conference labels, venue, city, and notes, to simplify the dataset
 Converted average US viewers to a numeric format
