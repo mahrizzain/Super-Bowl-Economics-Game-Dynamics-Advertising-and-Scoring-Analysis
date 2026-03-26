@@ -220,5 +220,6 @@ The second hypothesis guiding this project was that there would be no relationsh
 Our summary statistics support this visual interpretation. The correlation coefficient (R = 0.280) indicates a weak positive association between margin of victory and total points scored. Additionally, the coefficient of determination (R² = 0.078) reveals that margin of victory accounts for only approximately 8% of the variance in total points scored, meaning the vast majority of scoring variation is explained by other factors entirely.
 
 ## Discussion
+**Hypothesis 1** (Diya)
 
-Add discussion section here.
+**Hypothesis 2**
