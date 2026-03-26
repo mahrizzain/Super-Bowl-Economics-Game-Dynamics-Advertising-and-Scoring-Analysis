@@ -78,7 +78,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
   ) +
   theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 18),
+    plot.title = element_text(face = "bold", size = 14),
     panel.grid.minor = element_blank(),
     panel.grid.major.x = element_blank()
   )
@@ -215,7 +215,7 @@ Plot 2 reveals a strong, positive, linear relationship between advertisement cos
 The graphical and numerical analyses provide compelling evidence against the null hypothesis. The strong, positive, linear correlation and the high coefficient of determination demonstrate that advertisement costs have risen steadily over time. We therefore reject the null hypothesis, as Super Bowl advertising costs increase as time progresses.
 
 **Hypothesis 2**
-The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the inverse, yielding a significant relationship. To investigate this, Plot 4 displays a scatterplot of total points scored on the x-axis and margin of victory (point differential) on the y-axis, with both a linear fit line overlaid for comparison. At first glance, Plot 4 reveals no clear or consistent pattern between the two variables. The points on the graph depart noticeably from the linear fit, suggesting that a straight-line model is not an appropriate characterization of the relationship, and that any association present is non-linear and inconsistent across the range of values.
+The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the opposite. To investigate this, Plot 4 displays a scatter plot of total points scored on the x-axis and margin of victory (point differential) on the y-axis, with a linear fit line overlaid for comparison. At first glance, Plot 4 reveals no clear or consistent pattern between the two variables. The points on the graph depart noticeably from the linear fit, suggesting that a straight-line model is not an appropriate characterization of the relationship, and that any association present is non-linear and inconsistent across the range of values.
 
 Our summary statistics support this visual interpretation. The correlation coefficient (R = 0.280) indicates a weak positive association between margin of victory and total points scored. Additionally, the coefficient of determination (R² = 0.078) reveals that margin of victory accounts for only approximately 8% of the variance in total points scored, meaning the vast majority of scoring variation is explained by other factors entirely.
 
