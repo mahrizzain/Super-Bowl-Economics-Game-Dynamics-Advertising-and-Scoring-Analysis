@@ -98,7 +98,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
   scale_x_date(date_breaks = "5 years", date_labels = "%Y") +
   scale_y_continuous(labels = label_number(scale = 1e-6, suffix = "M")) +
   labs(
-    title = "Cost of 30 second Advertisement by Year",
+    title = "Cost of 30 Second Advertisement by Year",
     x = NULL,
     y = "Cost of 30 second Advertisement",
     caption = "Source: Super Bowl Dataset"
@@ -121,7 +121,7 @@ super_bowl_data_1 |>
 ggplot(aes(x = (winning_team_points - losing_team_points), y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
   labs(
-    title = "Cost of 30 second advertisement by \n Score Differential by Network",
+    title = "Cost of 30 Second Advertisement by \n Score Differential by Network",
     x = "Point Difference",
     y = "Cost of 30 second Advertisement",
     color = "Network",
@@ -146,7 +146,7 @@ super_bowl_data_1 |>
   ggplot(aes(x = avg_us_viewers, y = cost_per_30_sec_ad, color = network)) +
   geom_point() +
   labs(
-    title = "Cost of 30 second advertisement \n based on avg. U.S Viewers by Network",
+    title = "Cost of 30 Second Advertisement \n Based on Avg. U.S Viewers by Network",
     x = "Average U.S Viewers (millions $)",
     y = "Cost of 30 second ad (millions $)",
     color = "Network",
@@ -166,6 +166,7 @@ super_bowl_data_1 |>
 ```{r}
 #| label: plot-5
 #| echo: false
+#| message: false
 
 ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y = (winning_team_points - losing_team_points))) +
   geom_point() +
