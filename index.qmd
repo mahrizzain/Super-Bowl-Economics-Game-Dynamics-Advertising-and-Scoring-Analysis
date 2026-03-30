@@ -163,7 +163,7 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y 
 
 ```
 
-Summary Statistics: Hypothesis 1, Plot 2
+**Summary Statistics: Hypothesis 1, Plot 2**
 ```{r}
 #| label: calculating-correlation-1
 #| echo: false
@@ -179,7 +179,7 @@ super_bowl_data_1 |>
   )
 ```
 
-Summary Statistics: Hypothesis 2, Plot 4
+**Summary Statistics: Hypothesis 2, Plot 4**
 ```{r}
 #| label: calculating-correlation-2
 #| echo: false
