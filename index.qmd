@@ -6,19 +6,19 @@ echo: true
 
 ## Introduction
 
-The Super Bowl is one of the most widely viewed sporting events in the US, making it one of the most valuable events for advertisers. Companies invest millions of dollars for just for seconds during the Super Bowl, and the costs have the ads have changed dramatically over time. In this project, we are trying to understand how advertising prices have evolved and what possible factors helped caused these changes.
+The Super Bowl is one of the most widely viewed sporting events in the US, making it one of the most valuable events for advertisers. Companies invest millions of dollars for just seconds during the Super Bowl, and the costs of the ads have changed dramatically over time. In this project, we aim to understand how advertising prices have evolved and what possible factors have contributed to these changes.
 
 This project uses Kaggle's [“Super Bowl Game Results”](https://www.kaggle.com/datasets/thedevastator/super-bowl-game-results/) dataset. The dataset includes information on date, location, scores, broadcast networks, and the cost of 30-second advertisements, and many other columns, which is more than enough for analyzing both economic and game-related factors.
 
 The primary research question guiding this analysis is:
 
-How have Super Bowl advertising costs changed over time, and are game characteristics such as scoring and competitiveness related to one another?
+How have Super Bowl advertising costs evolved, and are game characteristics, such as scoring and competitiveness, related to one another?
 
-To address this question, two hypotheses are examined. First, we test whether there is a relationship between time (year) and the cost of a 30-second Super Bowl advertisement. Second, we investigate whether there is a relationship between margin of victory and total points scored, in order to determine whether more competitive games tend to be higher scoring.
+To address this question, two hypotheses are examined. First, we test whether there is a relationship between time (year) and the cost of a 30-second Super Bowl advertisement. Second, we investigate whether there is a relationship between margin of victory and total points scored, to determine whether more competitive games tend to be higher scoring.
 
 ## Data
 
-The data used in this project come from the “Super Bowl Game Results” dataset on Kaggle, which aggregates publicly available information from NFL records, broadcast networks, and media rating organizations. The dataset includes 52 observations, each representing a Super Bowl game from 1967 (Super Bowl I) through 2018 (Super Bowl LII), and contains 19 variables describing game outcomes, scoring, attendance, broadcast details, and advertising costs.
+The data used in this project comes from the “Super Bowl Game Results” dataset on Kaggle, which aggregates publicly available information from NFL records, broadcast networks, and media rating organizations. The dataset includes 52 observations, each representing a Super Bowl game from 1967 (Super Bowl I) through 2018 (Super Bowl LII), and contains 19 variables describing game outcomes, scoring, attendance, broadcast details, and advertising costs.
 
 Key Variables:
 Date: The date on which each Super Bowl was played
@@ -27,16 +27,15 @@ Average U.S. Viewers: The average number of television viewers in the United Sta
 Network: The television network broadcasting the game (categorical)
 Cost Per 30s Ad: The cost (in U.S. dollars) of a 30-second advertisement slot
 
-Additionally, we added / mutated a few variables:
+Additionally, we added/mutated a few variables:
 Year: Extracted from the game date
-Margin of Victory: Difference between winning and losing team points
+Margin of Victory: Difference between the winning and losing team points
 Total Points: Sum of points scored by both teams
 
 Data Cleaning:
 Converted the date variable into a standard date format
 Removed unnecessary variables, including index, conference labels, venue, city, and notes, to simplify the dataset
 Converted average US viewers to a numeric format
-
 
 ```{r}
 #| label: load-pkgs
@@ -231,13 +230,13 @@ Our summary statistics support this visual interpretation. The correlation coeff
 
 ## Discussion
 **Hypothesis 1**
-Our analysis suggests that the cost of a 30-second Super Bowl advertisement has generally increased over time and as viewership has increased over time; this finding also holds true regardless of the broadcasting network. The strong relationship between year and cost (Plot 4) we identified in our analysis suggests that companies are increasingly willing to invest in Super Bowl advertising, which could be related to its ability to consistently reach larger audiences over time as shown by Plot 2. 
+Our analysis suggests that the cost of a 30-second Super Bowl advertisement has generally increased over time, and as viewership has increased over time; this finding also holds true regardless of the broadcasting network. The strong relationship between year and cost (Plot 4) we identified in our analysis suggests that companies are increasingly willing to invest in Super Bowl advertising, which could be related to its ability to consistently reach larger audiences over time, as shown by Plot 2. 
 
-The statistical methods and visualizations used in this analysis were appropriate to examine trends over time; though, there are several limitations to this analysis. Since the data is purely observational, it cannot definitively be stated that increasing years or larger audiences cause higher advertisement costs, but rather that they are associated. Furthermore, the relationship  between time and cost of advertisement (Plot 4) appears to exhibit some exponential behavior, so a linear model may not fully capture the relationship. However, it is important to consider that this relationship may be partially driven by tech advancements that expanded Super Bowl viewership and access across platforms, increasing advertising demand and costs; thus, the model also may not accurately predict future trends if this growth begins to level off. Other variables may also influence advertising costs than merely viewership and time. More specifically, the data set we used does not account for inflation; thus, any observed increases in advertisement cost doesn't account for changes in the value of money. One way to improve this analysis could be to adjust for inflation to better understand the real advertisement cost increase over time. 
+The statistical methods and visualizations used in this analysis were appropriate to examine trends over time; however, there are several limitations to this analysis. Since the data is purely observational, it cannot definitively be stated that increasing years or larger audiences cause higher advertisement costs, but rather that they are associated. Furthermore, the relationship between time and cost of advertisement (Plot 4) appears to exhibit some exponential behavior, so a linear model may not fully capture the relationship. However, it is important to consider that this relationship may be partially driven by tech advancements that expanded Super Bowl viewership and access across platforms, increasing advertising demand and costs; thus, the model also may not accurately predict future trends if this growth begins to level off. Other variables may also influence advertising costs more than merely viewership and time. More specifically, the data set we used does not account for inflation; thus, any observed increases in advertisement cost do not account for changes in the value of money. One way to improve this analysis could be to adjust for inflation to better understand the real advertisement cost increase over time. 
 
 Future research could focus on advertising costs and viewership in addition to other market-related variables, such as brand engagement or visibility, to clarify why companies are willing to pay more, specifically, in terms of how those advertising investments translate into market outcomes.
 
 **Hypothesis 2**
-This portion of the analysis examined Super Bowl data to see whether game competitiveness, measured by point difference, had a significant relationship with high scoring games. Overall, there is a weak relationship between the two variables, which suggests that game competitiveness is not a strong predictor of how many points are scored. This highlights the complex nature of high level football games, where the score is influenced by factors beyond competitiveness; this includes offensive strength, defensive performance, and strategic decision making. For example, a strong defense game may result in low scoring regardless of how close it is, and a high offense game may result in a high score even if one team wins by a large margin. The Super Bowl’s high pressure environment may also contribute to variability in gameplay that is not captured by the margin of victory alone. 
+This portion of the analysis examined Super Bowl data to see whether game competitiveness, measured by point difference, had a significant relationship with high-scoring games. Overall, there is a weak relationship between the two variables, which suggests that game competitiveness is not a strong predictor of how many points are scored. This highlights the complex nature of high-level football games, where the score is influenced by factors beyond competitiveness; this includes offensive strength, defensive performance, and strategic decision-making. For example, a strong defense game may result in low scoring regardless of how close it is, and a high offense game may result in a high score even if one team wins by a large margin. The Super Bowl’s high-pressure environment may also contribute to variability in gameplay that is not captured by the margin of victory alone. 
 
-There are also several limitations to this analysis that should be considered. The dataset includes a relatively small number of observations, with only one game per year out of all professional games, which limits the generalizability of the findings. The analysis also uses a simple linear model, which may not fully capture nonlinear relationships and more complex relationships with other variables that may significantly influence scoring outcomes. Overall, future research could incorporate additional variables and more advanced methods to better understand the factors that influence scoring outcomes in high stakes games to make better predictions for fans, coaches, and players.
+There are also several limitations to this analysis that should be considered. The dataset includes a relatively small number of observations, with only one game per year out of all professional games, which limits the generalizability of the findings. The analysis also uses a simple linear model, which may not fully capture nonlinear relationships and more complex relationships with other variables that may significantly influence scoring outcomes. Overall, future research could incorporate additional variables and more advanced methods to better understand the factors that influence scoring outcomes in high-stakes games to make better predictions for fans, coaches, and players.
