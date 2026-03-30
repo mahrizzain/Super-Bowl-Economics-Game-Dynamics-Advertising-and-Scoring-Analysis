@@ -74,7 +74,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = avg_us_viewers)) +
   scale_y_continuous(labels = label_number(scale = 1e-6, suffix = "M")) +
   labs(
     title = "Average U.S. Super Bowl TV Viewership Over Time",
-    subtitle = "Audience growth from the late 1960s to the late 2010s",
+    subtitle = "Plot 1",
     x = NULL,
     y = "Viewers (millions)",
     caption = "Source: Super Bowl Dataset"
@@ -101,6 +101,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
     title = "Cost of 30 Second Advertisement by Year",
     x = NULL,
     y = "Cost of 30 second Advertisement",
+    subtitle = "Plot 2",
     caption = "Source: Super Bowl Dataset"
   ) +
   theme_minimal(base_size = 13) +
@@ -111,34 +112,8 @@ ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
   )
 ```
 
-
 ```{r}
 #| label: plot-3
-#| echo: false
-
-super_bowl_data_1 |> 
-    filter(!game == "I") |> 
-ggplot(aes(x = (winning_team_points - losing_team_points), y = cost_per_30_sec_ad, color = network)) +
-  geom_point() +
-  labs(
-    title = "Cost of 30 Second Advertisement by \n Score Differential by Network",
-    x = "Point Difference",
-    y = "Cost of 30 second Advertisement",
-    color = "Network",
-    caption = "Source: Super Bowl Dataset"
-  ) +
-  scale_y_continuous(labels = scales::label_dollar(scale = 1e-06, suffix = " mil")) +
-  theme_minimal(base_size = 13) +
-  theme(
-    plot.title = element_text(face = "bold", size = 15),
-    panel.grid.minor = element_blank(),
-    panel.grid.major.x = element_blank()
-  )
-
-```
-
-```{r}
-#| label: plot-4
 #| echo: false
 
 super_bowl_data_1 |> 
@@ -149,6 +124,7 @@ super_bowl_data_1 |>
     title = "Cost of 30 Second Advertisement \n Based on Avg. U.S Viewers by Network",
     x = "Average U.S Viewers (millions $)",
     y = "Cost of 30 second ad (millions $)",
+    subtitle = "Plot 3",
     color = "Network",
     caption = "Source: Super Bowl Dataset"
   ) +
@@ -175,7 +151,8 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y 
     title = "Score Differential by Total Points Scored",
     x = "Total Points",
     y = "Point Difference",
-    caption = "Source: Super Bowl Dataset"
+    caption = "Source: Super Bowl Dataset",
+    subtitle = "Plot 4"
   ) +
   theme_minimal(base_size = 13) +
   theme(
@@ -186,6 +163,7 @@ ggplot(super_bowl_data_1, aes(x = (winning_team_points + losing_team_points), y 
 
 ```
 
+Summary Statistics: Hypothesis 1, Plot 2
 ```{r}
 #| label: calculating-correlation-1
 #| echo: false
@@ -201,7 +179,7 @@ super_bowl_data_1 |>
   )
 ```
 
-
+Summary Statistics: Hypothesis 2, Plot 4
 ```{r}
 #| label: calculating-correlation-2
 #| echo: false
