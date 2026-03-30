@@ -16,6 +16,8 @@ How have Super Bowl advertising costs evolved, and are game characteristics, suc
 
 To address this question, two hypotheses are examined. First, we test whether there is a relationship between time (year) and the cost of a 30-second Super Bowl advertisement. Second, we investigate whether there is a relationship between margin of victory and total points scored, to determine whether more competitive games tend to be higher scoring.
 
+\pagebreak
+
 ## Data
 
 The data used in this project comes from the “Super Bowl Game Results” dataset on Kaggle, which aggregates publicly available information from NFL records, broadcast networks, and media rating organizations. The dataset includes 52 observations, each representing a Super Bowl game from 1967 (Super Bowl I) through 2018 (Super Bowl LII), and contains 19 variables describing game outcomes, scoring, attendance, broadcast details, and advertising costs.
@@ -194,6 +196,8 @@ super_bowl_data_1 |>
 )
 ```
 
+\pagebreak
+
 ## Analysis
 **Hypothesis 1**
 The first hypothesis guiding this project was that there would be no relationship between year and the cost of a 30-second Super Bowl advertisement, with the alternative hypothesis proposing that advertisement costs increase over time. To evaluate this, a line plot (Plot 2) was created displaying Super Bowl year on the x-axis and the cost of a 30-second advertisement on the y-axis, along with a fitted regression line.
@@ -206,6 +210,8 @@ The graphical and numerical analyses provide compelling evidence against the nul
 The second hypothesis guiding this project was that there would be no relationship between margin of victory and total points scored with our H₁ being the opposite. To investigate this, Plot 4 displays a scatter plot of total points scored on the x-axis and margin of victory (point differential) on the y-axis, with a linear fit line overlaid for comparison. At first glance, Plot 4 demonstrates a weak positive association that is not strong enough to be practically meaningful. The points on the graph depart noticeably from the linear fit, suggesting that a straight-line model is not an appropriate characterization of the relationship, and that any association present is non-linear and inconsistent across the range of values.
 
 Our summary statistics support this visual interpretation. The correlation coefficient (R = 0.280) indicates a weak positive association between margin of victory and total points scored. Additionally, the coefficient of determination (R² = 0.078) reveals that margin of victory accounts for only approximately 8% of the variance in total points scored, meaning the vast majority of scoring variation is explained by other factors entirely.
+
+\pagebreak
 
 ## Discussion
 **Hypothesis 1**
