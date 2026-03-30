@@ -100,7 +100,7 @@ ggplot(super_bowl_data_1, aes(x = date, y = cost_per_30_sec_ad)) +
   labs(
     title = "Cost of 30 Second Advertisement by Year",
     x = NULL,
-    y = "Cost of 30 second Advertisement",
+    y = "Cost of 30 Second Advertisement",
     subtitle = "Plot 2",
     caption = "Source: Super Bowl Dataset"
   ) +
@@ -123,7 +123,7 @@ super_bowl_data_1 |>
   labs(
     title = "Cost of 30 Second Advertisement \n Based on Avg. U.S Viewers by Network",
     x = "Average U.S Viewers (millions $)",
-    y = "Cost of 30 second ad (millions $)",
+    y = "Cost of 30 Second Advertisement (millions $)",
     subtitle = "Plot 3",
     color = "Network",
     caption = "Source: Super Bowl Dataset"
