@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - presentation.pdf
+  execute-dir: file
+
+author:
+  - name: Benjamin Palmer
+  - name: Mahriz Zain
+  - name: Diya Patel
+  - name: Priyanka Gupta
+  - name: Julia Libhaber
+
+website:
+  title: "Super Bowl Economics & Game Dynamics"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Analysis
+        href: analysis/super-bowl-analysis.qmd
+      - text: Proposal
+        href: analysis/proposal.qmd
+      - text: Presentation
+        href: presentation.pdf
+    right:
+      - icon: github
+        href: "https://github.com/mahrizzain/Super-Bowl-Economics-Game-Dynamics-Advertising-and-Scoring-Analysis"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
