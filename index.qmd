@@ -1,0 +1,24 @@
+---
+title: "Super Bowl Economics & Game Dynamics"
+subtitle: "Trends in advertising costs and scoring patterns across Super Bowls I–LII (1967–2018)"
+---
+
+An R / Quarto data analysis examining how the cost of Super Bowl advertising has evolved over five decades, and whether more competitive games tend to be higher scoring.
+
+## Research Questions
+
+1. Is there a relationship between time (year) and the cost of a 30-second Super Bowl advertisement?
+2. Is there a relationship between margin of victory and total points scored — do closer games score more?
+
+## Key Findings
+
+- Year vs. ad cost: **R = 0.931, R² = 0.866**. Very strong positive relationship; about 87% of the variation in ad cost is associated with year.
+- Margin of victory vs. total points: **R = 0.280, R² = 0.078**. Weak association; competitiveness is not a strong predictor of total points scored.
+
+## Explore
+
+- [Read the full analysis](analysis/super-bowl-analysis.qmd)
+- [Read the proposal](analysis/proposal.qmd)
+- [View the presentation](presentation.pdf)
+
+Developed by team *group_by-awesomeness* — Benjamin Palmer, Diya Patel, Julia Libhaber, Priyanka Gupta, and Mahriz Zain — for STA 199: Introduction to Data Science at Duke University.
