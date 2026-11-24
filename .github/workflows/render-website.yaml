@@ -26,12 +26,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          install.packages(c("tidyverse", "tidymodels", "checklist"))
-        shell: Rscript {0}
-
-      - name: Install missing packages
-        run: |
-          checklist::install_missing_pkgs()
+          install.packages(c("tidyverse", "tidymodels"))
         shell: Rscript {0}
 
       - name: Render Quarto Project
